@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+}
+
+.header{
+    text-align:center;
+    padding:40px;
+}
+
+.header h1{
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card h3{
+    color:#38bdf8;
+}
+
+.card p{
+    font-size:22px;
+    font-weight:bold;
+}

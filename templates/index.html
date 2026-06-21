@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>🚀 DevOps CI/CD Dashboard</h1>
+    <p>Jenkins • Docker • Kubernetes Monitoring</p>
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>🟢 Application</h3>
+        <p>{{ data.status }}</p>
+    </div>
+
+    <div class="card">
+        <h3>🐳 Docker</h3>
+        <p>{{ data.container }}</p>
+    </div>
+
+    <div class="card">
+        <h3>☸ Kubernetes</h3>
+        <p>{{ data.orchestration }}</p>
+    </div>
+
+    <div class="card">
+        <h3>🔧 Jenkins</h3>
+        <p>{{ data.cicd }}</p>
+    </div>
+
+    <div class="card">
+        <h3>📦 Version</h3>
+        <p>{{ data.version }}</p>
+    </div>
+
+    <div class="card">
+        <h3>🖥 Hostname</h3>
+        <p>{{ data.hostname }}</p>
+    </div>
+
+</div>
+
+</body>
+</html>
