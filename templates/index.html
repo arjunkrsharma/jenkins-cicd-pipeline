@@ -13,7 +13,7 @@
 
 <div class="cards">
 
-    <div class="card">
+    <div class="card" onclick="window.open('http://127.0.0.1:42005')">
         <h3>🟢 Application</h3>
         <p>{{ data.status }}</p>
     </div>
@@ -23,14 +23,24 @@
         <p>{{ data.container }}</p>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="window.open('http://127.0.0.1:42005')">
         <h3>☸ Kubernetes</h3>
         <p>{{ data.orchestration }}</p>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="window.open('http://localhost:8080')">
         <h3>🔧 Jenkins</h3>
-        <p>{{ data.cicd }}</p>
+        <p>Open Jenkins Dashboard</p>
+    </div>
+
+    <div class="card" onclick="window.open('http://localhost:3000')">
+        <h3>📊 Grafana</h3>
+        <p>Open Grafana</p>
+    </div>
+
+    <div class="card" onclick="window.open('http://localhost:9090')">
+        <h3>🔥 Prometheus</h3>
+        <p>Open Prometheus</p>
     </div>
 
     <div class="card">

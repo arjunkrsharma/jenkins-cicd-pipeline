@@ -1,6 +1,6 @@
 body{
     margin:0;
-    font-family:Arial;
+    font-family:Arial, sans-serif;
     background:#0f172a;
     color:white;
 }
@@ -12,6 +12,11 @@ body{
 
 .header h1{
     font-size:40px;
+}
+
+.header p{
+    color:#cbd5e1;
+    font-size:18px;
 }
 
 .cards{
@@ -27,10 +32,20 @@ body{
     border-radius:20px;
     text-align:center;
     box-shadow:0 10px 20px rgba(0,0,0,0.4);
+
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 30px rgba(0,0,0,0.6);
+    background:#263548;
 }
 
 .card h3{
     color:#38bdf8;
+    margin-bottom:20px;
 }
 
 .card p{
